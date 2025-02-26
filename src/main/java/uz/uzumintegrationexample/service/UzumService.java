@@ -25,11 +25,7 @@ public class UzumService {
     public CheckResponse check(CheckRequest request){
         getOrder(request.getParams().getOrderId());
 
-        return new CheckResponse(
-                request.getServiceId(),
-                System.currentTimeMillis() + "",
-                UzumStatus.OK
-        );
+        return CheckResponse.from(request);
     }
 
     public CreateResponse create(CreateRequest request){

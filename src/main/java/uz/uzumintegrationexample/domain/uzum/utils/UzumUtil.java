@@ -11,13 +11,15 @@ public class UzumUtil {
     private static final String password = "password";
 
     public static void authorize(String token) {
-        if (token == null || !token.startsWith("Basis ")) {
+        if (token == null || !token.startsWith("Basic ")) {
             throw new UzumException("Token is required");
         }
 
-        String decoded = new String(Base64.getDecoder().decode(login + ":" + password));
+        String expectedToken = Base64.getEncoder().encodeToString((login + ":" + password).getBytes());
 
-        if (!Objects.equals(decoded, token.substring(7))) {
+        String providedToken = token.substring(6);
+
+        if (!Objects.equals(expectedToken, providedToken)) {
             throw new UzumException("Invalid token");
         }
     }

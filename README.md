@@ -11,7 +11,7 @@ If you find this project useful, **don't forget to give it a star!** ⭐
 - **Transaction Initialization** – Create and manage payment requests.  
 - **Payment Validation** – Verify payment statuses in real-time.  
 - **Secure Integration** – Implements best practices for secure API communication.  
-- **Java-Based** – Developed using Java with a structured MVC architecture.  
+- **Java-Based** – Developed using Java
 
 ## Documentation  
 For detailed API specifications, refer to the official [Uzum.uz Merchant API Documentation](https://developer.uzumbank.uz/merchant/).  

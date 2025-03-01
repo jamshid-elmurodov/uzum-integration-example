@@ -1,6 +1,6 @@
 # Uzum.uz Merchant API Integration in Java  
 
-This project provides a **Java-based integration** with [Uzum.uz Merchant API](https://merchants.uzumbank.uz/en/), enabling seamless payment processing through Payme.uz. It implements API endpoints for transaction initialization, validation, and confirmation, following Uzum.uz's official documentation.  
+This project provides a **Java-based integration** with [Uzum.uz Merchant API](https://merchants.uzumbank.uz/en/), enabling seamless payment processing through Uzum.uz. It implements API endpoints for transaction initialization, validation, and confirmation, following Uzum.uz's official documentation.  
 
 ## ⭐ Show Some Love!  
 If you find this project useful, **don't forget to give it a star!** ⭐  

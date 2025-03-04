@@ -14,6 +14,7 @@ public class ReverseResponse {
     private String transId;
     private UzumStatus status;
     private Long amount;
+    private String reverseTime;
 
     public static ReverseResponse from(BaseRequest request, Long amount) {
         return ReverseResponse.builder()
@@ -21,6 +22,7 @@ public class ReverseResponse {
                 .transId(request.getTransId())
                 .status(UzumStatus.REVERSED)
                 .amount(amount)
+                .reverseTime(System.currentTimeMillis() + "")
                 .build();
     }
 }

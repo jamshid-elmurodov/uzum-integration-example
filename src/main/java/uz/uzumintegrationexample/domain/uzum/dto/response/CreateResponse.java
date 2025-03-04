@@ -15,6 +15,7 @@ public class CreateResponse {
     private UzumStatus status;
     private String transTime;
     private Long amount;
+    private String transId;
 
     public static CreateResponse from(CreateRequest request) {
         return CreateResponse.builder()
@@ -23,6 +24,7 @@ public class CreateResponse {
                 .status(UzumStatus.CREATED)
                 .transTime(System.currentTimeMillis() + "")
                 .amount(request.getAmount())
+                .transId(request.getTransId())
                 .build();
     }
 }

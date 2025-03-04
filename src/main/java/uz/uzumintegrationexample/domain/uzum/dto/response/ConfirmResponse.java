@@ -14,6 +14,7 @@ public class ConfirmResponse {
     private String transId;
     private UzumStatus status;
     private Long amount;
+    private String confirmTime;
 
     public static ConfirmResponse from(BaseRequest request, Long amount) {
         return ConfirmResponse.builder()
@@ -21,6 +22,7 @@ public class ConfirmResponse {
                 .transId(request.getTransId())
                 .status(UzumStatus.CONFIRMED)
                 .amount(amount)
+                .confirmTime(System.currentTimeMillis() + "")
                 .build();
     }
 }

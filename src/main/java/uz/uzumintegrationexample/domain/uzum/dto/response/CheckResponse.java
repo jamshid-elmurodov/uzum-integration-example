@@ -19,7 +19,7 @@ public class CheckResponse {
         return CheckResponse.builder()
                 .serviceId(request.getServiceId())
                 .timestamp(System.currentTimeMillis() + "")
-                .status(UzumStatus.CONFIRMED)
+                .status(UzumStatus.OK)
                 .data(request.getParams())
                 .build();
     }
